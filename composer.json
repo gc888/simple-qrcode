@@ -10,13 +10,6 @@
             "email": "support@simplesoftware.io"
         }
     ],
-    "repositories":
-    [
-            {
-                "type": "vcs",
-                "url": "https://github.com/n7best/BaconQrCode"
-            }
-    ],
     "require": {
         "php": ">=5.4.0",
       	"ext-gd": "*",
