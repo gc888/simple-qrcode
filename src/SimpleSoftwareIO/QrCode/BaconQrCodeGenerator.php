@@ -173,7 +173,19 @@ class BaconQrCodeGenerator implements QrCodeInterface {
         $this->writer->getRenderer()->setBackgroundColor(new Rgb($red, $green, $blue));
         return $this;
     }
-
+    
+    /**
+     * Changes the block radius of a QrCode
+     *
+     * @param int $radius
+     * @return $this
+     */
+    public function blockRadius($radius)
+    {
+        $this->writer->getRenderer()->setBlockRadius($radius);
+        return $this;
+    }
+    
     /**
      * Changes the error correction level of a QrCode
      *
